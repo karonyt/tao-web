@@ -1,0 +1,142 @@
+:root {
+    /*header param*/
+    --HeaderHeight: 40px;
+    --HeaderBGColor: #fff;
+    --HeaderTxColor: #777;
+    /*TopPage param*/
+    --MainGBImg: url("./image.png");
+    --TopABTTxColor: #EEE;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: var(--HeaderHeight);
+    background-color: var(--HeaderBGColor);
+    color: var(--HeaderTxColor);
+    align-items: center;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 50%);
+    position: fixed;
+    margin-left: 2em;
+    top: 0;
+    right: 0;
+}
+
+header nav {
+    width: 70%
+}
+
+header ul {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    padding-top: 100px;
+}
+
+header a{
+    color: var(--HeaderTxColor);
+}
+
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+header img{
+    margin-left: 16.6%;
+}
+
+header ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #cccccc;
+    opacity: 1; /* Firefox */
+}
+
+header ::-ms-input-placeholder {
+    color: #cccccc;
+}
+
+.title {
+    margin-left: 1.3%;
+}
+   
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1.25em;
+    font-size: 1.5em;
+}
+
+.sideber-area {
+    margin-left: 5%;
+    margin-top: 50px;
+    width: 20%;
+    border: 3px solid #EEEEEE;
+    border-radius: 1em;
+    padding: 0.8em;
+    height: min-content;
+}
+.sideber-area ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.main-content-area {
+    margin-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 60%;
+    border: 3px solid #EEEEEE;
+    border-radius: 1em;
+    padding: 2.5em;
+}
+
+.page-title {
+    border-bottom: 3px solid #EEEEEE;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    border-top: 1px solid #393e46;
+    background-color: #EEE;
+    align-items: center;
+}
+
+.footer-content{
+    padding-left: calc(50% - 1em);
+}
+
+.TopMainbackground {
+    background-image: var(--MainGBImg);
+    background-repeat: no-repeat;
+    height: 100em;
+    color: var(--TopABTTxColor);
+}
+
+.fadeIn {
+    animation-name: fadeInAnime;/*1で解説*/
+    animation-duration:3s;/*3で解説*/
+    animation-iteration-count:1;/*4で解説*/
+    animation-timing-function:ease;/*5で解説*/
+    animation-delay: 0.5s;/*6で解説*/
+    animation-direction:normal;/*7で解説*/
+}
+
+/*1で解説*/
+@keyframes fadeInAnime{
+    0% {
+    opacity: 0;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
